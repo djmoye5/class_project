@@ -1,0 +1,83 @@
+body{
+    background-image: url("../night.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    color: yellow;
+    border-bottom: 1px solid cyan;
+    min-width: 96vw;
+    max-width: 96vw;
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 3vh 2vw 0vh 2vw;
+    font-size: 32px;
+}
+
+a:link{
+    color: cyan;
+}
+
+a:visited{
+    color: grey;
+}
+.sidebar{
+    border-right: 1px solid cyan;
+    display: inline-block;
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 79vh;
+    max-height: 79vw;
+}
+
+main{
+    overflow-y: scroll;
+    position: absolute;
+    display: inline-block;
+    min-width: 85vw;
+    min-height: 79vh;
+}
+
+footer{
+  color: yellow;
+  position: absolute;
+  border-top: 1px solid cyan;
+  min-width: 100vw;
+  max-height: 8vh;
+  text-align: center;
+}
+
+.quoteContainer{
+    background-color: black;
+    text-align: center; 
+    display: inline-block;
+    border: solid 1px midnightblue;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 10vw;
+    max-height: 10vw;
+    
+}
+
+
+
+.listContainer{
+    overflow-y: scroll;
+    min-width: 85vw;
+    min-height: 79vh;
+    max-height: 79vh;
+
+}
+
+
+
+form *{
+    display: block;
+}
+
+form input{
+  display: block;
+  margin-bottom: 3vh;
+}
