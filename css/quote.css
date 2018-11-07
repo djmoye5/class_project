@@ -4,6 +4,10 @@ body{
     padding: 0;
 }
 
+p{
+    color: cyan;
+}
+
 header{
     text-align: center;
     color: yellow;
@@ -16,7 +20,7 @@ header{
     font-size: 32px;
 }
 
-.container{
+.quoteContainer{
     background-color: black;
     border: 1px solid black;
     text-align: center;

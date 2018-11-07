@@ -1,5 +1,5 @@
-var quoteContainer = document.querySelector(".quoteContainer");
-var author = document.querySelector(".author");
+var quoteContainer = document.querySelector("#quoteContainer");
+
 
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
@@ -11,26 +11,24 @@ function getQueryVariable(variable) {
     return (false);
   }
 
-   
-
-  function singleQuote() {
-    fetch(`http://api.techlaunch.io:88/${}`)
+   function singleQuote(num) {
+    fetch(`http://api.techlaunch.io:88/${num}`)
       .then(function (response) {
       return response.json();
       })
       .then(function (data) {
       console.log(data);
-
-      for (var i = 0; i < data.length; i++) {
-        quoteContainer.innerHTML += `
-        <a href="quote.html?id=${data[i].id}">
-          <div class="container">
-          <p>${data[i].text}</p>
-          <p>${data[i].author}</p>
+      quoteContainer.innerHTML += `
+      
+      <div class="quoteContainer">
+          <p>"${data.text}" <br> -${data.author} <br>
+          <a href="${data.source}" target="_blank"> ${data.source} </a> </p>
           </div>
           `
-      }
-    }) 
+        })
+        .catch(function(error){
+          console.log("There was an error!!")
+        }) 
   }
 
-  singleQuote()
+  singleQuote(getQueryVariable("id"))

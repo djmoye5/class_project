@@ -1,0 +1,45 @@
+body{
+    background-image: url("../night.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: cyan;
+}
+
+header{
+    text-align: center;
+    color: yellow;
+    border-bottom: 1px solid cyan;
+    min-width: 96vw;
+    max-width: 96vw;
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 3vh 2vw 0vh 2vw;
+    font-size: 32px;
+}
+
+.container{
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    min-width: 75vw;
+    max-width: 75vw;
+    min-height: 40vh;
+    max-height: 40vh;
+    margin: 30vh;   
+}
+p{
+    color: cyan;
+}
+
+footer{
+    color: yellow;
+    position: absolute;
+    border-top: 1px solid cyan;
+    min-width: 100vw;
+    max-height: 8vh;
+    text-align: center;
+      }
